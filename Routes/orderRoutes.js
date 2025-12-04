@@ -5,7 +5,7 @@ const router = express.Router();
 console.log("🚀 Express router instance created");
 
 // ✅ CRITICAL FIX: Import authentication middleware
-const { verifySeller, verifyBuyer, verifyToken } = require("../Middleware/authMiddleware");
+const { verifySeller, verifyBuyer, verifyToken } = require("../Middleware/authmiddleware");
 console.log("🔐 Authentication middleware imported successfully");
 
 const orderController = require("../Controllers/order.controller");
